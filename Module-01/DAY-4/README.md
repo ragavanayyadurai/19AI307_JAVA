@@ -1,58 +1,55 @@
-# Ex.No:1(D) User Defined Method
+# Ex.No:1(D) USER DEFINED METHOD.
 
 ## AIM:
-Write a Java program to print Student details (name, age) age is same to all members in the class. Use static type variable to access age.
-
+To create a Java program print area of rectangle by defining instance method and local variable value as 10,20 .[Class Name is ‘Area’ function name is ‘calculateArea()’ and return type of function is ’void’
 
 ## ALGORITHM :
-1. Start the program and define a class Main with variables: name (String) and age (int, initialized to 18).
-2. In the main method, create a Scanner object to take input from the user.
-3. Create two instances of the Main class: obj1 and obj2.
-4. Use the scanner to input names for obj1 and obj2.
-5. Print the name and age of both obj1 and obj2 using System.out.println.
-6. End the program.
+1.	Start the program.
+2.	Define a class named 'Area'
+3.	Declare a public method named 'calculateArea' with no parameters
+4.	Inside the 'calculateArea' method:
+a)	Declare a Double variable 'length' and assign it the value 10.0
+b)	Declare a Double variable 'width' and assign it the value 20.0
+c)	Calculate the area by multiplying 'length' and 'width' and store the result in a Double variable 'area'
+d)	Print the calculated area using the System.out.println statement
+5.	Define the 'main' method as static
+6.	Inside the 'main' method:
+a)	Create an instance of the 'Area' class called 'rectangle'
+b)	Call the 'calculateArea' method on the 'rectangle' object
+
 
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Multi Dimensional Array using Java
+Program to implement a User Defined Method using Java
 Developed by: RAGAVENDRAN A
-RegisterNumber: 212222230114
+RegisterNumber:  212222230114
 */
 ```
 
 ## Sourcecode.java:
 ```
 import java.util.*;
-public class Main
-{
-    String name;
-    int age=18;
-    public static void main(String[] args){
-    Scanner sc = new Scanner(System.in);
-	Main obj1=new Main();
-	Main obj2=new Main();
-	obj1.name=sc.next();
-	obj2.name=sc.next();
-	System.out.println("Student name: "+obj1.name+"Age: "+obj1.age);
-	System.out.println("Student name: "+obj2.name+"Age: "+obj2.age);
-
+public class Area {
+        public void calculateArea(){
+        int length = 10;
+        int breadth = 20;
+        double area = length * breadth;
+        System.out.println("Area of Rectangle is " + area);
+    }
+       public static void main(String[] args) {
+       Area obj=new Area();
+       obj.calculateArea();
+       }
 }
-}
-
 ```
 
-
 ## OUTPUT:
-
-![image](https://github.com/user-attachments/assets/157cbc10-975d-4f68-ab5e-5fc6d0e511db)
-
-
+![Screenshot 2025-04-25 154603](https://github.com/user-attachments/assets/318c1e3a-1cbe-4c7b-9ac4-43d58ffd487f)
 
 
 ## RESULT:
-Thus the java program for Student details (name, age) age is same to all members in the class was executed successfully.
-
+Thus, the Java program to print area of rectangle by defining instance method and local variable value as 10,20 was created successfully.
 
